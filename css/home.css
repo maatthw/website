@@ -1,0 +1,16 @@
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25%;
+}
+
+#name {
+    text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  color: #000;  
+}

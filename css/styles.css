@@ -1,0 +1,63 @@
+:root {
+    --nav-button-bgc: rgb(85, 90, 90);
+    --nav-hover-bgc: rgb(105, 115, 115);
+    --nav-active-bgc: rgb(125, 135, 135);
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(135deg, rgb(45, 50, 50), rgb(65, 70, 70));
+    height: 70px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#home, #blog, #portfolio {
+    background-color: var(--nav-button-bgc);
+    text-align: center;
+    width: 33.33%;
+    border-left: 1px solid rgba(153, 153, 153, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#home {
+    border-left: none;
+}
+
+#home:hover, #blog:hover, #portfolio:hover {
+    background-color: var(--nav-hover-bgc);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#home:active, #blog:active, #portfolio:active {
+    background-color: var(--nav-active-bgc);
+    transform: translateY(0);
+}
+
+.nav-a {
+    text-decoration: none;
+    color: rgb(253, 255, 254);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
